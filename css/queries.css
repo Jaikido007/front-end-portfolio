@@ -6,7 +6,7 @@
 
 /* BELOW 1200px (Landscape Tablet) */
 
-@media (max-width: 75em) {
+@media (max-width: 1200px) {
     .hero{
         height: 100vh;
         max-width: 100%;
@@ -49,7 +49,7 @@
 
 /* BELOW 719px  (Phablets) */
 
-@media (max-width: 45em) {
+@media (max-width: 719px) {
     
     nav {
         padding-left: 2%;
