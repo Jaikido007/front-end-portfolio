@@ -93,7 +93,7 @@
 
 /* BELOW 550px  (Phones) */
 
-@media (max-width: 34em) {
+@media (max-width: 550px) {
 
     body {
         line-height: 1.5;
@@ -182,7 +182,7 @@
 
 /* BELOW 330px  (Mini-Phones) */
 
-@media (max-width: 22em) {
+@media (max-width: 330px) {
 
     .logo {
         font-size: 1.6rem;
