@@ -168,6 +168,11 @@ h4 {
     ;
 }
 
+.clickable-image {
+    height: 300px;
+    width: 300px;
+}
+
 #workGrid a {
     text-decoration: none;
     cursor: pointer;
