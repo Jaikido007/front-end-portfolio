@@ -1,0 +1,280 @@
+:root {
+    --feature-color: #ff0f7b;
+}
+
+html {
+    font-size: 10px;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+
+.hero{
+	height: 100vh;
+	max-width: 100%;
+	background-image: url(../images/hero.png);
+	background-size: cover;
+	background-position: center;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 8%;
+	padding-right: 8%;
+}
+
+.logo {
+	color: white;
+	font-size: 3.5rem;
+	letter-spacing: 0.1rem;
+}
+
+nav ul li {
+	list-style-type: none;
+	display: inline-block;
+	padding: 11rem 2.5rem;
+}
+
+nav ul li a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+    font-size: 1.8rem;
+}
+
+nav ul li a:hover {
+    color: var(--feature-color);
+    transition: .4s;
+}
+
+.button {
+    background-color:var(--feature-color);
+    color: #eee;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 1rem 2.5rem;
+    border-radius: 3rem;
+    transition: transform .4s; 
+    font-size: 1.8rem;
+}
+
+.button:hover {
+    transform: scale(1.2);
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+
+.content{
+	position: absolute;
+	top: 50%;
+	left:8%;
+	transform: translateY(-50%);
+}
+
+h2 {
+	color: #fcfc;
+	letter-spacing: 0.2rem;
+	font-size: 2rem;
+}
+
+span {
+	color: var(--feature-color);
+}
+
+h3 {
+	color: white;
+	font-size: 7.5rem;
+}
+
+h4 {
+	color: white;
+	font-size: 2.5rem;
+	margin-bottom: 5rem;
+}
+
+#about{
+	max-width: 100%;
+	padding: 10rem 0rem;
+	background-color: #222;
+}
+.about-img{
+	height: auto;
+	width: 43rem;
+}
+.about-text, .work-text{
+	width: 55rem;
+}
+
+.about-main{
+	width: 120rem;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.about-text h2, .contact-text h2, #work h2{
+	color: white;
+	font-size: 7.5rem;
+	text-transform: capitalize;
+	margin-bottom: 2rem;
+}
+.about-text h3, .contact-text h3, .work-text h3{
+	color: white;
+	letter-spacing: 0.2rem;
+	font-size: 2.2rem;
+	margin-bottom: 2.5rem;
+	text-transform: capitalize;
+}
+.about-text p, .contact-text p, .work-text p{
+	color: #fcfc;
+	letter-spacing: 1px;
+	line-height: 2.8rem;
+	font-size: 1.8rem;
+	margin-bottom: 4.5rem;
+}
+
+#work {
+    max-width: 100%;
+    padding: 10rem 0rem;
+    background-color: #333;
+}
+
+.work-main{
+	width: 120rem;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+#workGrid {
+    max-width: 60%;
+    margin: 0px auto;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-rows: 30rem 30rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "app1 app1 app1"
+    "app2 app2 app3"
+    /* "app4 app5" */
+    ;
+}
+
+#workGrid a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#workGrid a:hover {
+    text-decoration: underline;
+    color: var(--feature-color);
+}
+
+#app1 {
+    grid-area: app1;
+    background-image: url("../images/hollywood-jack-website.jpg");
+}
+
+#app2 {
+    grid-area: app2;
+    background-image: url("../images/always-sunny-website.jpeg");
+}
+
+#app3 {
+    grid-area: app3;
+    background-image: url("../images/horiseon-code-refactor.jpg");
+}
+
+.workGridArea {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    display: grid;
+    align-content: end;
+    border-radius: 5px;
+
+}
+
+.heading {
+    background-color: rgba(0,0,0,0.7);
+    padding: 1rem 0rem 3rem 1rem;
+    height: 2.5rem;
+    color: white;
+    font-size: 18px;
+    border-bottom: 5px solid var(--feature-color);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 44rem;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-name {
+    font-size: 3rem;
+    color: #eee;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.footer-content {
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    max-width: 50rem;
+    text-align: center;
+}
+
+.footer-name {
+    color: white;
+    font-size: 25px;
+}
+
+.contact-details {
+    display: flex;
+}
+
+.contact-details a {
+    width: 4.5rem;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:  var(--feature-color);
+    border-radius: 50%;
+    margin: 2.2rem 1rem;
+    color: #eee;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.contact-details a:hover{
+    transition: .4s;
+    transform: scale(1.3);
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+
+.footer-copyright {
+    position: absolute;
+    color: #eee;
+    bottom: 3.5rem;
+    font-size: 1.4rem; 
+}
