@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- meta tags -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- links -->
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link
     rel="stylesheet"
@@ -15,11 +16,89 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="icon" href="./images/jay-icon.png">
-
+    <!-- title -->
     <title>Jay Mullen | Front-end Developer Portfolio</title>
 </head>
 
 <body>
+<!-- hero / nav section -->
+<header class="hero">
+    <nav>
+    <h1 class="logo">Port<span>folio</span></h1>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <button class="button" type="button" onclick="window.location.href = '#contact';">Contact</button>
+    </ul>
+    </nav>
+
+    <div class="content">
+        <h2>Hello, my name is</h2>
+        <h3>Jay <span>Mullen</span></h3>
+        <h4>I'm a Front-End Developer.</h4>
+    </div>
+</header>
+
+<!-- about me section -->
+<section id="about">
+    <div class="about-main">
+        <img src="./images/Jay_BW_right_pink_shirt.png" class="about-img" alt="Jay Mullen - Front-end Developer Image">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <h3>Front-end <span>Developer</span></h3>
+            <p>As a junior front end developer, I have a passion for creating visually appealing and user-friendly websites. I have a strong understanding of HTML, CSS, and JavaScript, and I am constantly seeking to improve my skills and stay up-to-date with the latest technologies. I am a quick learner and a collaborative team member, and I am eager to bring my skills and enthusiasm to any project.</p>
+            <button class="button" type="button" onclick="window.location.href = '#contact';">Contact me</button>
+        </div>
+    </div>
+</section>
+
+<!-- portfolio section -->
+<section id="work">
+    <div class="work-main">
+        <div class="work-text">
+            <h2>Work</h2>
+            <h3>Porfolio <span>Highlights</span></h3>
+            <p class="work-text">Welcome to my portfolio! On this page, you will find a selection of my most notable and interesting projects. I am constantly working on new projects and updating my portfolio, so be sure to check back regularly to see what I've been up to.</p>
+        </div>
+    </div>
+
+    <section id="workGrid">
+        <div id="app1" class="workGridArea">
+            <a href="https://www.hollywoodjack.co.uk/" aria-label="Hollywood Jack Bespoke Web Design Link" onclick="window.open(this.href, '_blank'); return false;" >
+            <div class="heading">Hollywood Jack Website (Web Design)</div>
+            </a>
+        </div> 
     
+        <div id="app2" class="workGridArea">
+            <a href="https://www.itsalwayssunny.co.uk/" aria-label="It's Always Sunny Fansite link" onclick="window.open(this.href, '_blank'); return false;" >
+            <div class="heading">It's Always Sunny Website (Web Design)</div>
+            </a>
+        </div>
+    
+        <div id="app3" class="workGridArea">
+            <a href="https://jaikido007.github.io/horiseon-code-refactor/" aria-label="Horiseon Content Management System Link" onclick="window.open(this.href, '_blank'); return false;" >
+            <div class="heading">Horiseon (Code Refactor)</div>
+            </a>
+        </div>
+    </section>
+</section>
+
+<!-- footer / contact section -->
+<footer id="contact">
+    <div class="contact-text">
+        <h2>Contact Me</h2>
+    </div>
+    <h4 class="footer-name">Jay <span>Mullen</span></h4>
+    <p class="footer-content">For all enquiries - please click on a link to contact me:</p>
+    <div class="contact-details">
+        <a href="tel:+447957152036"><i class="fa-solid fa-phone" aria-label="Phone me"></i></a>
+        <a href="mailto:jaymullen@gmail.com"><i class="fa-solid fa-envelope" aria-label="Email me"></i></a>
+        <a class="fa-brands fa-facebook-f" aria-label="Facebook Link" onclick="window.open(this.href, '_blank'); return false;" href="https://www.facebook.com/Hollywood-Jack-100221439349304"></a>
+        <a class="fa-brands fa-twitter" aria-label="Twitter Link" onclick="window.open(this.href, '_blank'); return false;" href="https://www.twitter.com/HollywoodJackUK?t=dwl8SNYNXhci_djdzt32_A&s=09"></a>
+        <a class="fa-brands fa-instagram" aria-label="Instagram Link" onclick="window.open(this.href, '_blank'); return false;" href="https://www.instagram.com/HollywoodJackUK"></a>
+    </div>
+    <p class="footer-copyright">&copy; 2022 | Jay Mullen</p>
+</footer>
+
 </body>
 </html>
