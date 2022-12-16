@@ -9,7 +9,7 @@ This repository contains the source code for my front-end developer portfolio we
 To view the site locally, clone the repository and open the index.html file in your preferred web browser.
 
 alternatively you can visit the deployed site at:
-
+https://jaikido007.github.io/front-end-portfolio/
 
 ## Built With
 
